@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Elshaddai",
+    title: "EL SHADDAI 24-HOUR PRAISE WORSHIP MINISTRIES",
     description:
       ".",
   },

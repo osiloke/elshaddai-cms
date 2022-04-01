@@ -18,21 +18,22 @@ export default function FullWidthImage(props) {
         style={{
           display: "grid",
           alignItems: "center",
+          height: "100vh"
         }}
       >
         {img?.url ? (
           <img
             src={img}
             objectFit={"cover"}
-            objectPosition={imgPosition}
+            // objectPosition={imgPosition}
             style={{
               gridArea: "1/1",
               // You can set a maximum height for the image, if you wish.
-              height: "100%",
+              // height: "100vh",
               width: "100%",
             }}
             // You can optionally force an aspect ratio for the generated image
-            aspectratio={3 / 1}
+            // aspectratio={3 / 1}
             // This is a presentational image, so the alt should be an empty string
             alt=""
             formats={["auto", "webp", "avif"]}
@@ -73,9 +74,10 @@ export default function FullWidthImage(props) {
                 style={{
                   // boxShadow:
                   //   "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  // backgroundColor: "rgb(255, 68, 0)",
-                  color: "white",
+                  backgroundColor: "white",
+                  color: "#666",
                   lineHeight: "1",
+                  fontSize: "5em",
                   padding: "0.25em",
                 }}
               >
@@ -88,7 +90,7 @@ export default function FullWidthImage(props) {
                 style={{
                   // boxShadow:
                   //   "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  // backgroundColor: "rgb(255, 68, 0)",
+                    // backgroundColor: "#8300E9",
                   color: "white",
                   lineHeight: "1",
                   padding: "0.25rem",
