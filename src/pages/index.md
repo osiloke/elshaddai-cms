@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: EL SHADDAI 24-HOUR PRAISE WORSHIP MINISTRIES
-image: /img/home-jumbotron.jpg
+image: /img/angel_god.jpeg
 heading: Great coffee with a conscience
 subheading: UNDER CONSTRUCTION
 mainpitch:
