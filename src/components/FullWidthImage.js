@@ -16,11 +16,27 @@ export default function FullWidthImage(props) {
       <div
         className="margin-top-0 margin-bottom-0"
         style={{
-          display: "grid",
+          // display: "grid",
           alignItems: "center",
           height: "100vh"
         }}
-      >
+      >{title && (
+        <h1
+          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          style={{
+            // boxShadow:
+            //   "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
+            backgroundColor: "white",
+            color: "#655",
+            lineHeight: "1",
+            fontSize: "5em",
+            padding: "0.25em",
+            textAlign: 'center'
+          }}
+        >
+          {title}
+        </h1>
+      )}
         {img?.url ? (
           <img
             src={img}
@@ -56,51 +72,22 @@ export default function FullWidthImage(props) {
             formats={["auto", "webp", "avif"]}
           />
         )}
-        {(title || subheading) && (
-          <div
+        {subheading && (
+          <h3
+            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
             style={{
-              // By using the same grid area for both, they are stacked on top of each other
-              gridArea: "1/1",
-              position: "relative",
-              // This centers the other elements inside the hero component
-              placeItems: "center",
-              display: "grid",
+              // boxShadow:
+              //   "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
+                // backgroundColor: "#8300E9",
+              color: "#656",
+              lineHeight: "1",
+              padding: "0.25rem",
+              marginTop: "0.5rem",
+              textAlign: 'center'
             }}
           >
-            {/* Any content here will be centered in the component */}
-            {title && (
-              <h1
-                className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-                style={{
-                  // boxShadow:
-                  //   "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  backgroundColor: "white",
-                  color: "#666",
-                  lineHeight: "1",
-                  fontSize: "5em",
-                  padding: "0.25em",
-                }}
-              >
-                {title}
-              </h1>
-            )}
-            {subheading && (
-              <h3
-                className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-                style={{
-                  // boxShadow:
-                  //   "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                    // backgroundColor: "#8300E9",
-                  color: "white",
-                  lineHeight: "1",
-                  padding: "0.25rem",
-                  marginTop: "0.5rem",
-                }}
-              >
-                {subheading}
-              </h3>
-            )}
-          </div>
+            {subheading}
+          </h3>
         )}
       </div>
     </React.Fragment>

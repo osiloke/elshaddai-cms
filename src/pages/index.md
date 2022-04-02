@@ -3,7 +3,7 @@ templateKey: index-page
 title: EL SHADDAI 24-HOUR PRAISE WORSHIP MINISTRIES
 image: /img/angel_god.jpeg
 heading: Great coffee with a conscience
-subheading: UNDER CONSTRUCTION
+subheading: WEBSITE UNDER CONSTRUCTION
 mainpitch:
   title: Why Kaldi
   description: >
